@@ -4,8 +4,8 @@ main:
     url: /publications/
 
   - title: "CV"
-    url: files/Seo_Brian_Resume.pdf
-    
+    url: "https://BrianSeo17.github.io/files/Seo_Brian_Resume.pdf"
+
   #- title: "Talks"
   #  url: /talks/    
 
