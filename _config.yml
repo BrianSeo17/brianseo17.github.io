@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Brian Y. Seo"
   pronouns         : # example: "she/her"  
-  bio              : "2nd Year CS @ Princeton"
+  bio              : # bio
   location         : "Los Angeles, CA"
   employer         : # employer
   uri              : # URL
