@@ -8,9 +8,9 @@
 
   <div class="author__avatar">
     {% if author.avatar contains "://" %}
-    	<img src="{{ author.avatar }}" alt="{{ author.name }}" class = "circle">
+    	<img src="{{ author.avatar }}" alt="{{ author.name }}">
     {% else %}
-    	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar circle" alt="{{ author.name }}">
+    	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
     {% endif %}
   </div>
 
@@ -156,13 +156,3 @@
     </ul>
   </div>
 </div>
-<style>
-  .circle {
-    border: red;
-    background-color: #FFFFFF;
-    height: 100px;
-    -moz-border-radius:75px;
-    -webkit-border-radius: 75px;
-    width: 100px;
-}
-</style>
