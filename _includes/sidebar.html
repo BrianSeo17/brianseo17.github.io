@@ -6,12 +6,13 @@
   {% if page.sidebar %}
     {% for s in page.sidebar %}
       {% if s.image %}
-        <img src= {% if s.image contains "://" %}
+        <img src=
+        {% if s.image contains "://" %}
           "{{ s.image }}"
         {% else %}
           "{{ s.image | prepend: "/images/" | prepend: base_path }}"
         {% endif %}
-        alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}" class = "circle">
+        alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
       {% endif %}
       {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
       {% if s.text %}{{ s.text | markdownify }}{% endif %}
@@ -22,13 +23,3 @@
   {% endif %}
   </div>
 {% endif %}
-<style>
-  .circle {
-    border: red;
-    background-color: #FFFFFF;
-    height: 100px;
-    -moz-border-radius:75px;
-    -webkit-border-radius: 75px;
-    width: 100px;
-}
-</style>

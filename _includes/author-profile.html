@@ -6,7 +6,7 @@
 
 <div itemscope itemtype="http://schema.org/Person">
 
-  <div class="author__avatar">
+  <div class="author__avatar circle">
     {% if author.avatar contains "://" %}
     	<img src="{{ author.avatar }}" alt="{{ author.name }}">
     {% else %}
@@ -156,3 +156,13 @@
     </ul>
   </div>
 </div>
+<style>
+  .circle {
+    border: red;
+    background-color: #FFFFFF;
+    height: 100px;
+    -moz-border-radius:75px;
+    -webkit-border-radius: 75px;
+    width: 100px;
+}
+</style>
