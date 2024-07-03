@@ -336,13 +336,13 @@
     margin-left: -0.5em;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    color: #fff;
+    color: hsl(0, 0%, 0%);
     font-weight: bold;
     background: $primary-color;
     border-radius: $border-radius;
 
     &:hover {
-      color: #fff;
+      color: hsl(0, 0%, 0%);
     }
   }
 }
